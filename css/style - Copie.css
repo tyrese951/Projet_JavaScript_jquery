@@ -1,0 +1,204 @@
+/* Feuille de style principale */
+/* Règles CSS */
+
+* {
+    box-sizing: border-box;
+    /* margin: 0; */
+    /* border: 1px solid grey; */
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img,video {
+    width: 100%;
+    height: auto;
+}
+
+/* CUSTOM */
+
+header, footer {
+    background-color: black;
+    min-height: 5vh;
+    color: white;
+    padding: 16px;
+}
+
+main {
+    min-height: 90vh;
+}
+
+footer p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 16px;
+    display: inline-block;
+    transition: color 500ms;
+}
+
+header a:hover {
+    color: red;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    
+}
+
+article {
+    border: 2px solid black;
+}
+
+
+
+#mountain {
+    background-image: url("../images/bg.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 100%; /* horizontal / vertical*/
+    background-size: 100%;
+    min-height: 15vw;/*viewport height*/
+
+}
+
+#logo {
+    max-width: 150px;
+}
+
+.btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 500ms;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.footer-section {
+    border-left: 2px solid rgba(255,255,255,0.2);
+    /* width: 33%;
+    min-width: 300px; */
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 320px; */
+    flex: 1 1 320px;
+    padding: 1rem;
+}
+
+.icon {
+    height: 16px;
+}
+
+.search {
+    background-color: transparent;
+    border: none;
+    padding: 16px;
+}
+
+.relative {
+    position: relative;
+}
+
+.categorie {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: lightcoral;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 14px;
+
+}
+
+
+
+/* Typo */
+
+.text-c {
+    text-align: center;
+}
+
+/* FLEX Parent */
+
+.d-flex {
+    display: flex;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.jc-sa {
+    justify-content: space-around;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.g-1 {
+    gap: 1.2rem;/*1rem = 16px*/
+}
+
+
+/* SIZING */
+
+.w-1200 {
+    max-width: 1200px;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.col {
+    /*Grow Shrink basis (width)*/
+    flex: 1 1 350px;
+    /* 350 + 350 + 350  < 1200 */
+}
+
+
+/* SPACING */
+
+
+.m-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mb-1 {
+    margin-bottom: 1rem /*16px*/;
+}
+
+.p-1  {
+    padding : 1rem;
+}
+
+
+
+@media screen and (min-width: 600px) {
+
+    h1 {
+        font-size: 4rem;
+    }
+
+}
+
+
